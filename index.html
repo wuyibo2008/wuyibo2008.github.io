@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="\wuyibo2008\tubiao.ico">
+        <style>
+            body {
+              background-image: url('\wuyibo2008\123.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            </style>
+        <meta name="Keyeords" content="吴奕博、长日无尽">
+        <title >THE ENDLESS DAYS</title>
+    </head>
+    <body>
+        <h1 id="text"><h1>       
+    </body>
+    <script>
+        let divTyping = document.getElementById('text')
+        let i = 0,
+          timer = 0,
+          huanyi = "欢迎来到  THE ENDLESS DAYS  的网站主页 <br><br> 我是一个入门编程的小白<br><br> 目前正在学习python 和 C语言 <br><br>加载中..................<br><br>加载完成！<br>什么也木有！"
+      
+        function typing () {
+          if (i <= huanyi.length) {
+            divTyping.innerHTML = huanyi.slice(0, i++) + '_'
+            timer = setTimeout(typing, 70)
+          }
+          else {
+            divTyping.innerHTML = huanyi//结束打字,移除 _ 光标
+            clearTimeout(timer)
+          }
+        } 
+        typing()
+      </script>
+      <body>
+        <h1><h1><a href='https://space.bilibili.com/1127600223?spm_id_from=333.1007.0.0' target='_blank'>点击这里进入我的bilibili主页<br></a></h1></h1>
+        <h1><h1><a href='https://github.com/wuyibo2008' target='_blank'>点击这里进入我的github主页<br></a></h1></h1>
+        <h1><h1><a href='https://blog.csdn.net/The_Endless_Days?type=blog' target='_blank'>点击这里进入我的CSDN主页<br></a></h1></h1>
+      </body>
+</html>
